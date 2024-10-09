@@ -20,7 +20,7 @@
 		<meta charset="utf-8">
 		<title>{{ striptags(`${boardinfo.hostname ?? '?'}${node ? ` - ${node.title}` : ''}`) }} - LuCI</title>
 		{% if (!darkpref): %}
-			<script type="text/javascript">
+			<script>
 				var mediaQuery = window.matchMedia('(prefers-color-scheme: dark)'),
 				    rootElement = document.querySelector(':root'),
 				    setDarkMode = function(match) { rootElement.setAttribute('data-darkmode', match.matches) };
